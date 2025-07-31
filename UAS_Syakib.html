@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Truman Show</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=VT323&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+
+
+  <!-- NAVIGASI -->
+  <div class="tv-knobs">
+    <div class="tv-knob active" data-page="intro">
+      <span class="tv-knob-label">Intro</span>
+    </div>
+    <div class="tv-knob" data-page="characters">
+      <span class="tv-knob-label">Characters</span>
+    </div>
+    <div class="tv-knob" data-page="themes">
+      <span class="tv-knob-label">Themes</span>
+    </div>
+    <div class="tv-knob" data-page="about">
+      <span class="tv-knob-label">About Me</span>
+    </div>
+  </div>
+
+
+
+  <!-- TOMBOL IG -->
+  <div class="social-share">
+    <a href="https://www.instagram.com/syans_14/" class="social-btn" aria-label="Share on Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://github.com/syans-OG" class="social-btn" aria-label="Share on github">
+      <i class="fab fa-github text-xl"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/syakib/" class="social-btn" aria-label="Share on linkedin"">
+       <i class="fab fa-linkedin text-xl"></i>
+    </a>
+  </div>
+
+  <!-- HOME PAGE -->
+  <div id="intro" class="page-container page-active">
+    <div class="container mx-auto px-4 py-8">
+      <div class="crt-frame mb-10">
+        <div class="crt-content">
+          <div class="flex flex-col items-center justify-center min-h-[70vh] bg-gradient-to-b from-blue-900 to-blue-700 text-white py-20 px-4">
+            <h1 class="text-6xl md:text-8xl font-bold mb-4 retro-font text-center">THE TRUMAN SHOW</h1>
+            <p class="text-2xl md:text-3xl italic mb-10 text-center">"How's it going to end?"</p>
+            <div class="w-24 h-1 bg-white mb-10"></div>
+            <p class="text-xl md:text-2xl max-w-3xl text-center">The story of a man whose entire life is broadcast 24/7 as a TV show without his knowledge.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6 retro-font">About the Film</h2>
+        <p class="text-lg mb-6">Released in 1998 and directed by Peter Weir, "The Truman Show" stars Jim Carrey as Truman Burbank, an insurance salesman who discovers his entire life is actually a reality television show. Truman has been filmed by hidden cameras 24 hours a day since birth, and everyone in his life—including his wife and best friend—are actors.</p>
+        
+        <p class="text-lg mb-6">The film explores themes of reality television, privacy, the nature of truth, and existentialism. It was critically acclaimed for its prescient commentary on reality television and surveillance culture, years before reality TV became the dominant format it is today.</p>
+        
+        <div class="bg-blue-100 p-6 rounded-lg border-l-4 border-blue-700 mt-8">
+          <h3 class="text-xl font-bold mb-3">Did You Know?</h3>
+          <p>"The Truman Show" was released before reality television became a mainstream phenomenon. The film predicted the public's fascination with watching "real" people in controlled environments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Characters Page -->
+  <div id="characters" class="page-container">
+    <div class="container mx-auto px-4 py-8">
+      <div class="crt-frame mb-10">
+        <div class="crt-content">
+          <div class="flex items-center justify-center bg-blue-800 text-white py-12 px-4">
+            <h1 class="text-5xl font-bold retro-font">CHARACTERS</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        <!-- Truman -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+          <div class="crt-frame" style="border-width: 8px;">
+            <div class="crt-content">
+              <img src="asset/MC.png" alt="Truman Burbank" class="w-full h-64 object-cover object-[center_12%]">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Truman Burbank</h3>
+            <p class="text-gray-700 mb-4">The unwitting star of a 24/7 reality show since birth. An insurance salesman living in the artificial town of Seahaven.</p>
+            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="truman">
+              Ask for Trivia
+            </button>
+            <div class="trivia-content mt-4 hidden">
+              <div class="spinner"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Christof -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+          <div class="crt-frame" style="border-width: 8px;">
+            <div class="crt-content">
+              <img src="asset/Christof.jpg" alt="Christof" class="w-full h-64 object-cover object-[center_40%]">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Christof</h3>
+            <p class="text-gray-700 mb-4">The creator and executive producer of The Truman Show who has documented Truman's life since before birth.</p>
+            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="christof">
+              Ask for Trivia
+            </button>
+            <div class="trivia-content mt-4 hidden">
+              <div class="spinner"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Meryl -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+          <div class="crt-frame" style="border-width: 8px;">
+            <div class="crt-content">
+              <img src="asset/merly.jpg" alt="Meryl Burbank" class="w-full h-64 object-cover object-[center_8%]">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Meryl Burbank</h3>
+            <p class="text-gray-700 mb-4">An actress playing Truman's wife in the show. She often promotes products in her dialogue like a commercial.</p>
+            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="meryl">
+              Ask for Trivia
+            </button>
+            <div class="trivia-content mt-4 hidden">
+              <div class="spinner"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marlon -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+          <div class="crt-frame" style="border-width: 8px;">
+            <div class="crt-content">
+              <img src="asset/marlon.jpg" alt="Marlon" class="w-full h-64 object-cover object-[center_25%]">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Marlon</h3>
+            <p class="text-gray-700 mb-4">An actor playing Truman's best friend since childhood. He provides emotional support and reassurance to Truman.</p>
+            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="marlon">
+              Ask for Trivia
+            </button>
+            <div class="trivia-content mt-4 hidden">
+              <div class="spinner"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sylvia -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+          <div class="crt-frame" style="border-width: 8px;">
+            <div class="crt-content">
+              <img src="asset/sylfia.jpg" alt="Sylvia" class="w-full h-64 object-cover">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Sylvia / Lauren</h3>
+            <p class="text-gray-700 mb-4">A former cast member who fell in love with Truman and attempted to reveal the truth before being removed from the show.</p>
+            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="sylvia">
+              Ask for Trivia
+            </button>
+            <div class="trivia-content mt-4 hidden">
+              <div class="spinner"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kirk -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+          <div class="crt-frame" style="border-width: 8px;">
+            <div class="crt-content">
+              <img src="asset/Kirk Burbank.jpg" alt="Kirk" class="w-full h-64 object-cover">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Kirk Burbank</h3>
+            <p class="text-gray-700 mb-4">The actor who played Truman's father, who was written off the show but later tries to sneak back onto the set.</p>
+            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="kirk">
+              Ask for Trivia
+            </button>
+            <div class="trivia-content mt-4 hidden">
+              <div class="spinner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Themes Page -->
+  <div id="themes" class="page-container">
+    <div class="container mx-auto px-4 py-8">
+      <div class="crt-frame mb-10">
+        <div class="crt-content">
+          <div class="flex items-center justify-center bg-blue-800 text-white py-12 px-4">
+            <h1 class="text-5xl font-bold retro-font">THEMES</h1>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-lg max-w-4xl mx-auto mb-8 text-center">Explore the deeper themes and messages in "The Truman Show." Hover over each card to reveal a more in-depth analysis.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        <!-- Reality vs. Illusion -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front crt-frame">
+              <div class="crt-content bg-blue-100 p-8 flex flex-col items-center justify-center h-full">
+                <i class="fas fa-mask text-5xl mb-4 text-blue-700"></i>
+                <h3 class="text-2xl font-bold mb-4 text-center">Reality vs. Illusion</h3>
+                <p class="text-gray-700 text-center">The thin line between what is real and what is constructed.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="text-2xl font-bold mb-4 text-blue-900">Reality vs. Illusion</h3>
+              <p class="mb-4">The film challenges viewers to consider what constitutes "reality" in a world increasingly mediated by screens and constructed narratives. Truman's entire world is a carefully crafted illusion, yet his emotions and experiences within it are authentic.</p>
+              <p class="mb-4">This theme resonates deeply in our modern society where social media presents curated versions of reality, and news can be manipulated to present certain narratives. The struggle to distinguish between reality and illusion reflects our own struggles in the digital age.</p>
+              <p>When Truman finally touches the wall of the dome, it represents the moment of transcendence—when illusion is shattered by the undeniable physicality of truth.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Freedom and Control -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front crt-frame">
+              <div class="crt-content bg-blue-100 p-8 flex flex-col items-center justify-center h-full">
+                <i class="fas fa-door-open text-5xl mb-4 text-blue-700"></i>
+                <h3 class="text-2xl font-bold mb-4 text-center">Freedom and Control</h3>
+                <p class="text-gray-700 text-center">The tension between free will and external manipulation.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="text-2xl font-bold mb-4 text-blue-900">Freedom and Control</h3>
+              <p class="mb-4">Truman's life represents the ultimate loss of autonomy—every aspect of his existence is monitored, manipulated, and monetized without his consent. Yet within these constraints, his desire for self-determination remains unquenchable.</p>
+              <p class="mb-4">Christof represents the controlling force that believes safety and predictability are more important than freedom. His statement that "We accept the reality of the world with which we are presented" highlights how control often works—by limiting our ability to imagine alternatives.</p>
+              <p>Truman's decision to leave his fabricated world, despite the uncertainties that await him, is a powerful affirmation of the human spirit's need for authentic freedom over comfortable confinement.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Media and Voyeurism -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front crt-frame">
+              <div class="crt-content bg-blue-100 p-8 flex flex-col items-center justify-center h-full">
+                <i class="fas fa-video text-5xl mb-4 text-blue-700"></i>
+                <h3 class="text-2xl font-bold mb-4 text-center">Media and Voyeurism</h3>
+                <p class="text-gray-700 text-center">Our fascination with watching the lives of others.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="text-2xl font-bold mb-4 text-blue-900">Media and Voyeurism</h3>
+              <p class="mb-4">Released before the explosion of reality TV, the film presciently examines our cultural obsession with watching the intimate details of others' lives. The global audience watching Truman represents our own voyeuristic tendencies.</p>
+              <p class="mb-4">The film questions the ethics of this voyeurism—is it harmless entertainment or a troubling invasion of privacy? The audiences within the film who watch Truman's most painful moments while eating popcorn hold up a mirror to our own consumption of others' trauma as entertainment.</p>
+              <p>The film also explores how media shapes reality rather than simply reflecting it, as Christof literally controls the weather, time of day, and even who Truman meets, all for better ratings.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Identity and Authenticity -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front crt-frame">
+              <div class="crt-content bg-blue-100 p-8 flex flex-col items-center justify-center h-full">
+                <i class="fas fa-fingerprint text-5xl mb-4 text-blue-700"></i>
+                <h3 class="text-2xl font-bold mb-4 text-center">Identity and Authenticity</h3>
+                <p class="text-gray-700 text-center">The search for one's true self amid constructed narratives.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="text-2xl font-bold mb-4 text-blue-900">Identity and Authenticity</h3>
+              <p class="mb-4">Truman's journey is fundamentally about discovering his authentic self. Despite living in an artificial world, his desires, curiosities, and yearning for connection are genuine, highlighting how authentic identity can emerge even within inauthentic contexts.</p>
+              <p class="mb-4">The film raises questions about how much of our own identities are socially constructed versus inherently our own. Truman's suspicions and ultimate rebellion suggest that there's something essential about the human spirit that resists complete programming.</p>
+              <p>His catchphrase—"In case I don't see ya, good afternoon, good evening, and good night"—takes on new meaning by the end, transforming from a programmed response to a genuine expression of his autonomous identity.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corporate Power -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front crt-frame">
+              <div class="crt-content bg-blue-100 p-8 flex flex-col items-center justify-center h-full">
+                <i class="fas fa-building text-5xl mb-4 text-blue-700"></i>
+                <h3 class="text-2xl font-bold mb-4 text-center">Corporate Power</h3>
+                <p class="text-gray-700 text-center">The commodification of human experience.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="text-2xl font-bold mb-4 text-blue-900">Corporate Power</h3>
+              <p class="mb-4">The Truman Show corporation represents the ultimate extension of corporate power—commodifying a human being's entire existence from birth. Every aspect of Truman's life is monetized through product placement and merchandising.</p>
+              <p class="mb-4">Meryl's awkward product placements during intimate moments with Truman satirize how advertising intrudes into our most private experiences. The film critiques how capitalism can transform even our most personal moments into opportunities for profit.</p>
+              <p>The legal adoption of Truman by a corporation raises disturbing questions about corporate personhood and rights. The film suggests that when profit motives drive human relationships, authentic connections become impossible.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- God Complex -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front crt-frame">
+              <div class="crt-content bg-blue-100 p-8 flex flex-col items-center justify-center h-full">
+                <i class="fas fa-cloud-sun text-5xl mb-4 text-blue-700"></i>
+                <h3 class="text-2xl font-bold mb-4 text-center">The God Complex</h3>
+                <p class="text-gray-700 text-center">The dangers of playing creator.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="text-2xl font-bold mb-4 text-blue-900">The God Complex</h3>
+              <p class="mb-4">Christof represents the ultimate "creator" figure—controlling the weather, orchestrating Truman's life events, and even "resurrecting" his father. His control room at the top of a fake sky directly references divine imagery.</p>
+              <p class="mb-4">The film questions the ethics of such god-like power. Christof believes he's protecting Truman from the dangers of the real world, but his benevolence masks a fundamental disrespect for Truman's autonomy and dignity.</p>
+              <p>The climactic scene where Christof speaks to Truman from the "heavens" emphasizes this god complex. However, Truman's decision to leave shows the limits of such power—even a "god" cannot control the human spirit's desire for freedom and truth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- About Me Page -->
+  <div id="about" class="page-container">
+    <div class="container mx-auto px-4 py-8">
+      <div class="crt-frame mb-10">
+        <div class="crt-content">
+          <div class="flex items-center justify-center bg-blue-800 text-white py-12 px-4">
+            <h1 class="text-5xl font-bold retro-font">ABOUT ME</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-10">
+        <div class="md:w-1/3">
+          <div class="crt-frame">
+            <div class="crt-content">
+              <img src="asset/Syakib .jpg" alt="Developer" class="w-full h-64 object-cover object-[center_80%]">
+            </div>
+          </div>
+          <div class="mt-6">
+            <h3 class="text-2xl font-bold mb-2">SYAKIB</h3>
+            <p class="text-gray-700 mb-2">A11.2025.16258</p>
+            <p class="text-gray-700 mb-4">Web Developer & Designer Grafis</p>
+            <div class="flex gap-3">
+              <a href="https://www.instagram.com/syans_14/" class="text-blue-700 hover:text-blue-900">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a href="https://github.com/syans-OG" class="text-blue-700 hover:text-blue-900">
+                <i class="fab fa-github text-xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/syakib/" class="text-blue-700 hover:text-blue-900">
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:w-2/3">
+          <h2 class="text-3xl font-bold mb-6">About me</h2>
+          <p class="text-lg mb-4">Hello! My name is Syakib, and I am an Informatics Engineering student at UDINUS Semarang.</p>
+          <p class="text-lg mb-4">I come from Tegal, Central Java. I am quite skilled in several areas, including HTML, CSS, JavaScript, Android Studio, PHP, and I also have strong abilities in graphic design.</p>
+          <p class="text-lg mb-4">I began learning to code during my time at SMK Al-Irsyad Tegal. There, I learned a lot from my teachers such as Mr. Sandy, Mr. Erfin, and Mr. Fathoni.</p>
+          <p class="text-lg mb-4">I’m truly grateful to have studied under their guidance, which helped me pursue higher education at UDINUS and join the Informatics Engineering program.</p>
+          <p class="text-lg mb-4">And in case I don’t see ya, good afternoon, good evening, and good night! 🌙</p>
+          <h2 class="text-3xl font-bold mb-6">Why I Created This Site</h2>
+          <p class="text-lg mb-4">"The Truman Show" has always caught my attention with its unique take on reality shows and surveillance culture. As someone who loves coding and movies, I wanted to create a fun and interactive space that pays tribute to this amazing film.</p>
+          <p class="text-lg mb-6">I created this website not only as a college assignment, but also as a way to show my appreciation for Peter Weir’s masterpiece. Through this site, I hope to invite you to think about media, privacy, and how we can stay true to ourselves in today’s digital world.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script/index.js"></script>
+</body>
+</html>
