@@ -7,12 +7,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=VT323&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
 
 
   <!-- NAVIGASI -->
@@ -37,12 +34,6 @@
   <div class="social-share">
     <a href="https://www.instagram.com/syans_14/" class="social-btn" aria-label="Share on Instagram">
       <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://github.com/syans-OG" class="social-btn" aria-label="Share on github">
-      <i class="fab fa-github text-xl"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/syakib/" class="social-btn" aria-label="Share on linkedin"">
-       <i class="fab fa-linkedin text-xl"></i>
     </a>
   </div>
 
@@ -97,12 +88,6 @@
           <div class="p-6">
             <h3 class="text-2xl font-bold mb-2">Truman Burbank</h3>
             <p class="text-gray-700 mb-4">The unwitting star of a 24/7 reality show since birth. An insurance salesman living in the artificial town of Seahaven.</p>
-            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="truman">
-              Ask for Trivia
-            </button>
-            <div class="trivia-content mt-4 hidden">
-              <div class="spinner"></div>
-            </div>
           </div>
         </div>
 
@@ -116,12 +101,6 @@
           <div class="p-6">
             <h3 class="text-2xl font-bold mb-2">Christof</h3>
             <p class="text-gray-700 mb-4">The creator and executive producer of The Truman Show who has documented Truman's life since before birth.</p>
-            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="christof">
-              Ask for Trivia
-            </button>
-            <div class="trivia-content mt-4 hidden">
-              <div class="spinner"></div>
-            </div>
           </div>
         </div>
 
@@ -135,12 +114,6 @@
           <div class="p-6">
             <h3 class="text-2xl font-bold mb-2">Meryl Burbank</h3>
             <p class="text-gray-700 mb-4">An actress playing Truman's wife in the show. She often promotes products in her dialogue like a commercial.</p>
-            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="meryl">
-              Ask for Trivia
-            </button>
-            <div class="trivia-content mt-4 hidden">
-              <div class="spinner"></div>
-            </div>
           </div>
         </div>
 
@@ -154,12 +127,6 @@
           <div class="p-6">
             <h3 class="text-2xl font-bold mb-2">Marlon</h3>
             <p class="text-gray-700 mb-4">An actor playing Truman's best friend since childhood. He provides emotional support and reassurance to Truman.</p>
-            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="marlon">
-              Ask for Trivia
-            </button>
-            <div class="trivia-content mt-4 hidden">
-              <div class="spinner"></div>
-            </div>
           </div>
         </div>
 
@@ -173,12 +140,6 @@
           <div class="p-6">
             <h3 class="text-2xl font-bold mb-2">Sylvia / Lauren</h3>
             <p class="text-gray-700 mb-4">A former cast member who fell in love with Truman and attempted to reveal the truth before being removed from the show.</p>
-            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="sylvia">
-              Ask for Trivia
-            </button>
-            <div class="trivia-content mt-4 hidden">
-              <div class="spinner"></div>
-            </div>
           </div>
         </div>
 
@@ -192,19 +153,11 @@
           <div class="p-6">
             <h3 class="text-2xl font-bold mb-2">Kirk Burbank</h3>
             <p class="text-gray-700 mb-4">The actor who played Truman's father, who was written off the show but later tries to sneak back onto the set.</p>
-            <button class="trivia-btn bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded focus:outline-none" data-character="kirk">
-              Ask for Trivia
-            </button>
-            <div class="trivia-content mt-4 hidden">
-              <div class="spinner"></div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
 
 
   <!-- Themes Page -->
@@ -351,45 +304,70 @@
         </div>
       </div>
 
-      <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-10">
-        <div class="md:w-1/3">
-          <div class="crt-frame">
+      <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-start">
+        <div class="lg:w-1/3 w-full">
+          <div class="crt-frame mb-6">
             <div class="crt-content">
-              <img src="asset/Syakib .jpg" alt="Developer" class="w-full h-64 object-cover object-[center_80%]">
+              <div class="w-full" style="aspect-ratio: 4/5; overflow: hidden; border-radius: 10px;">
+                <img src="asset/Syakib .jpg" alt="Developer" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%;">
+              </div>
             </div>
           </div>
-          <div class="mt-6">
-            <h3 class="text-2xl font-bold mb-2">SYAKIB</h3>
-            <p class="text-gray-700 mb-2">A11.2025.16258</p>
-            <p class="text-gray-700 mb-4">Web Developer & Designer Grafis</p>
-            <div class="flex gap-3">
-              <a href="https://www.instagram.com/syans_14/" class="text-blue-700 hover:text-blue-900">
-                <i class="fab fa-instagram text-xl"></i>
+          
+          <div class="text-center lg:text-left bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-3xl font-bold mb-3 text-blue-800">SYAKIB</h3>
+            <p class="text-gray-600 mb-2 font-semibold">A11.2025.16258</p>
+            <p class="text-gray-600 mb-4">Web Developer & Designer Grafis</p>
+            <div class="flex gap-4 justify-center lg:justify-start">
+              <a href="https://www.instagram.com/syans_14/" class="text-blue-700 hover:text-blue-900 transition-colors">
+                <i class="fab fa-instagram text-2xl"></i>
               </a>
-              <a href="https://github.com/syans-OG" class="text-blue-700 hover:text-blue-900">
-                <i class="fab fa-github text-xl"></i>
+              <a href="https://github.com/syans-OG" class="text-blue-700 hover:text-blue-900 transition-colors">
+                <i class="fab fa-github text-2xl"></i>
               </a>
-              <a href="https://www.linkedin.com/in/syakib/" class="text-blue-700 hover:text-blue-900">
-                <i class="fab fa-linkedin text-xl"></i>
+              <a href="https://www.linkedin.com/in/syakib/" class="text-blue-700 hover:text-blue-900 transition-colors">
+                <i class="fab fa-linkedin text-2xl"></i>
               </a>
             </div>
           </div>
         </div>
         
-        <div class="md:w-2/3">
-          <h2 class="text-3xl font-bold mb-6">About me</h2>
-          <p class="text-lg mb-4">Hello! My name is Syakib, and I am an Informatics Engineering student at UDINUS Semarang.</p>
-          <p class="text-lg mb-4">I come from Tegal, Central Java. I am quite skilled in several areas, including HTML, CSS, JavaScript, Android Studio, PHP, and I also have strong abilities in graphic design.</p>
-          <p class="text-lg mb-4">I began learning to code during my time at SMK Al-Irsyad Tegal. There, I learned a lot from my teachers such as Mr. Sandy, Mr. Erfin, and Mr. Fathoni.</p>
-          <p class="text-lg mb-4">I’m truly grateful to have studied under their guidance, which helped me pursue higher education at UDINUS and join the Informatics Engineering program.</p>
-          <p class="text-lg mb-4">And in case I don’t see ya, good afternoon, good evening, and good night! 🌙</p>
-          <h2 class="text-3xl font-bold mb-6">Why I Created This Site</h2>
-          <p class="text-lg mb-4">"The Truman Show" has always caught my attention with its unique take on reality shows and surveillance culture. As someone who loves coding and movies, I wanted to create a fun and interactive space that pays tribute to this amazing film.</p>
-          <p class="text-lg mb-6">I created this website not only as a college assignment, but also as a way to show my appreciation for Peter Weir’s masterpiece. Through this site, I hope to invite you to think about media, privacy, and how we can stay true to ourselves in today’s digital world.</p>
+        <div class="lg:w-2/3 w-full">
+          <div class="flex flex-col gap-8">
+            <!-- ABOUT ME -->
+            <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-700">
+              <h2 class="text-3xl font-bold mb-6 text-blue-800 flex items-center">
+                <i class="fas fa-user-circle mr-3 text-blue-600"></i>
+                About Me
+              </h2>
+              <div class="space-y-4 text-gray-700 leading-relaxed">
+                <p class="text-lg">Hello! My name is <span class="font-semibold text-blue-800">Syakib</span>, and I am an Informatics Engineering student at <span class="font-semibold text-blue-800">UDINUS Semarang</span>.</p>
+                <p class="text-lg">I come from Tegal, Central Java. I am quite skilled in several areas, including <span class="font-semibold text-blue-600">HTML, CSS, JavaScript, Android Studio, PHP</span>, and I also have strong abilities in <span class="font-semibold text-blue-600">graphic design</span>.</p>
+                <p class="text-lg">I began learning to code during my time at <span class="font-semibold text-blue-800">SMK Al-Irsyad Tegal</span>. There, I learned a lot from my teachers such as Mr. Sandy, Mr. Erfin, and Mr. Fathoni.</p>
+                <p class="text-lg">I'm truly grateful to have studied under their guidance, which helped me pursue higher education at UDINUS and join the Informatics Engineering program.</p>
+                <p class="text-lg italic text-blue-700 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-300">
+                  <i class="fas fa-quote-left mr-2"></i>
+                  And in case I don't see ya, good afternoon, good evening, and good night! 🌙
+                </p>
+              </div>
+            </div>
+             
+            <!-- WHY I CREATED THIS SITE -->
+            <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-700">
+              <h2 class="text-3xl font-bold mb-6 text-blue-800 flex items-center">
+                <i class="fas fa-lightbulb mr-3 text-yellow-500"></i>
+                Why I Created This Site
+              </h2>
+              <div class="space-y-4 text-gray-700 leading-relaxed">
+                <p class="text-lg"><span class="font-semibold text-blue-800">"The Truman Show"</span> has always caught my attention with its unique take on reality shows and surveillance culture. As someone who loves coding and movies, I wanted to create a fun and interactive space that pays tribute to this amazing film.</p>
+                <p class="text-lg">I created this website not only as a college assignment, but also as a way to show my appreciation for <span class="font-semibold text-blue-800">Peter Weir's masterpiece</span>. Through this site, I hope to invite you to think about media, privacy, and how we can stay true to ourselves in today's digital world.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+</div>
   <script src="script/index.js"></script>
 </body>
 </html>
